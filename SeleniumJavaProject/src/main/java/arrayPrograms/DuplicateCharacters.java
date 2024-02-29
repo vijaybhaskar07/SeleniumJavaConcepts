@@ -1,4 +1,4 @@
-package javaPrograms;
+package arrayPrograms;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ public class DuplicateCharacters {
 	public static void main(String[] args) {
 		
 		printDuplicateCharacters("javaselenium");
-		printDuplicateCharacters(null);
+		printDuplicateCharacters("");
 	}
 	
 	public static void printDuplicateCharacters(String str) {
@@ -34,9 +34,9 @@ public class DuplicateCharacters {
 			}else {
 				charMap.put(ch, 1);
 			}
-			System.out.println(str + " : " + charMap );
+			
 		}
-		
+		System.out.println(str + " : " + charMap );
 		//Print the map
 		
 //		Set <Map.Entry<Character, Integer>> entrySet = charMap.entrySet();
