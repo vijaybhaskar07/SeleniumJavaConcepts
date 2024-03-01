@@ -15,40 +15,26 @@ import com.google.common.base.CharMatcher;
 
 public class JavaProgram {	
 	
+	public static void isFibonacci(int num) {
+		
+		int num1 =0;
+		int num2=1;
+		
+		for(int i=0; i<num; i++) {
+			System.out.print(num1+ " ");
+			int num3 = num1+num2;
+			num1=num2;
+			num2=num3;
+		}
+		
+	}
 	
 	
 	
 	public static void main(String[] args) {
 	
-		int[] a = {9,5,6,8,2,1};
-		int[] b = {4,6,3,7,11,9};
 		
-		int a_length = a.length;
-		int b_length = b.length;
-		
-		int c_length = a_length + b_length;
-		
-		int[] c = new int[c_length];
-		
-		for (int i=0; i<a.length; i++) {
-			
-			c[i] = a[i];
-		}
-		
-		for (int i=0; i<b.length; i++) {
-			
-			c[a_length+i] = b[i];
-		}
-		
-		for(int i=0; i<c.length; i++) {
-			Arrays.sort(c);
-			System.out.print(c[i] + " ");
-		}
-		
-		
-		
-		
-		
+		isFibonacci(10);
 		
 		}
 		

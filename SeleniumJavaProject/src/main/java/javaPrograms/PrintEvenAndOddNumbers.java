@@ -1,6 +1,6 @@
 package javaPrograms;
 
-public class printEvenAndOddNumbers {
+public class PrintEvenAndOddNumbers {
 
 	public static void main(String[] args) {
 
