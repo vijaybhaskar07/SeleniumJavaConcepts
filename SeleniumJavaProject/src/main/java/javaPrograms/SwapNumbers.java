@@ -13,6 +13,7 @@ public class SwapNumbers {
 		a = a-b;
 		
 		System.out.println("After Swap a: " + a + " and b: " + b );
+		
 
 	}
 

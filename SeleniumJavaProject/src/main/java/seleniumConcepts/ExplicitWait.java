@@ -24,9 +24,9 @@ public class ExplicitWait {
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='WebDriver']")));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='WebDriver']")));
 		
-		WebElement element = driver.findElement(By.xpath("//p[text()='WebDriver']"));
+		//WebElement element = driver.findElement(By.xpath("//p[text()='WebDriver']"));
 		
 		boolean status = element.isDisplayed();
 		

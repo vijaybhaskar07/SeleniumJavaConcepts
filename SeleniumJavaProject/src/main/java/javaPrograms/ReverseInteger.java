@@ -14,6 +14,8 @@ public class ReverseInteger {
 		}
 			System.out.println(rev);
 			int num1 = 98765;
+			StringBuffer rev1 = new StringBuffer(String.valueOf(num1)).reverse();
+			System.out.println(rev1);
 			System.out.println(new StringBuffer(String.valueOf(num1)).reverse());
 
 	}

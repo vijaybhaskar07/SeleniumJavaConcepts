@@ -7,7 +7,7 @@ public class FindDuplicateWords {
 
 	public static void main(String[] args) {
 		
-		String names[] = {"Java", "C", "C++", "Ruby", "JavaScript", "TypeScript", "Java"};
+		String[] names = {"Java", "C", "C++", "Ruby", "JavaScript", "TypeScript", "Java"};
 		
 		// Compare each element
 		for(int i=0; i<names.length; i++) {
@@ -19,7 +19,7 @@ public class FindDuplicateWords {
 			}
 		}
 		
-		Set<String> storeNames = new HashSet<String>();
+		Set<String> storeNames = new HashSet<>();
 		
 		for(String name: names) {
 			if(storeNames.add(name)== false) {

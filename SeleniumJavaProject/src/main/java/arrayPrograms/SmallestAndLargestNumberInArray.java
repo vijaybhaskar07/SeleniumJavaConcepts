@@ -4,7 +4,7 @@ public class SmallestAndLargestNumberInArray {
 
 	public static void main(String[] args) {
 
-		int numbers[] = { -25, 75, 99, -125, 101, 45 };
+		int[] numbers = { -25, 75, 99, -125, 101, 45 };
 
 		System.out.println(numbers.length);
 		int largest = numbers[0];

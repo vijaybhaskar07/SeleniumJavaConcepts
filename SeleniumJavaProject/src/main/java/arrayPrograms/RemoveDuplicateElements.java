@@ -4,17 +4,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 public class RemoveDuplicateElements {
 
 	public static void main(String[] args) {
+		
 	
-		ArrayList<Character> character = new ArrayList<Character>(Arrays.asList('c', 'v', 'a', 's', 's'));
+	
+		List<Character> character = new ArrayList<>(Arrays.asList('c', 'v', 'a', 's', 's','b'));
+	
+		Set<Character> set = new HashSet<>(character); 
 		
-		LinkedHashSet<Character> linkedHashSet = new LinkedHashSet<Character>(character); 
-		
-		ArrayList<Character> numbersWithoutDuplicates = new ArrayList<Character>(linkedHashSet);
+		List<Character> numbersWithoutDuplicates = new ArrayList<>(set);
 		
 		System.out.println(numbersWithoutDuplicates);
 	}

@@ -4,7 +4,7 @@ public class LinearSearchInArray {
 
 	public static void main(String[] args) {
 	
-		int a[] = {3,4,5,7,8,9,10};
+		int[] a = {3,4,5,7,8,9,10};
 		
 		int eleSearch = 100;
 		boolean flag = false;
@@ -17,7 +17,7 @@ public class LinearSearchInArray {
 				break;
 			}
 		}
-		if(flag == false)
+		if(!flag)
 		{
 			System.out.println("Element not found");
 		}

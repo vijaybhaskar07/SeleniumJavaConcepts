@@ -24,7 +24,7 @@ public class ReverseString {
 		//3. Using Character Array
 		
 		String s = "aiautomation";
-		char a[] = s.toCharArray();
+		char[] a = s.toCharArray();
 		int len = a.length;
 		String rev = "";
 		for(int i=len-1; i>=0; i--) {

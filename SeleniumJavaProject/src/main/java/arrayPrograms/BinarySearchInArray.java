@@ -6,7 +6,7 @@ public class BinarySearchInArray {
 
 	public static void main(String[] args) {
 
-		int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		boolean flag = false;
 		int key = 11;
 		int l = 0;
@@ -31,8 +31,8 @@ public class BinarySearchInArray {
 		if (flag == false) {
 			System.out.println("Element not found..");
 		}
-		
-		System.out.println(Arrays.binarySearch(a, 9));
+		//by using inbuilt function
+		System.out.println(Arrays.binarySearch(a, 10));
 	}
 
 }
